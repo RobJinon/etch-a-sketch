@@ -13,12 +13,20 @@
     </head>
 
 
-    <body class="w-screen h-screen">
+    <body class="w-screen h-auto">
 
-        <div class="w-screen h-screen flex flex-col justify-content-center">
-            <h1 class="text-5xl m-20 text-center">Etch-a-Sketch</h1>
-            <div class="w-1/2 h-1/2 border border-slate-100 justify-center" id="grid"></div>
+        <div class="w-full h-full grid grid-cols-1 justify-items-center">
+
+            <h1 class="text-7xl my-10">Etch-a-Sketch</h1>
+
+            <div class="w-[700px] h-[700px] grid border border-slate-800 bg-white my-5" id="grid" name="grid"></div>
+
+            <button class="btn" id="clear">Clear</button>
+
         </div>
 
+
+    <script src="script.js"></script>
     </body>
+    
 </html>
