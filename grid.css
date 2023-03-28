@@ -1,0 +1,18 @@
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    overflow: hidden;
+    width: 600px;
+}
+
+.cell {
+    background-color: white;
+    padding-bottom: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px #444;
+    border-style: solid;
+    border-width: 1px;
+
+}
