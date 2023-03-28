@@ -14,6 +14,11 @@ $(document).ready(function(){
         sliderValue.text($(this).val() + "x" + $(this).val());
         grid.empty();
         setupGrid($(this).val());
+
+        if (!gridToggle) {
+            $('.cell').css('border', 'none');
+        }
+        
     });
 
     var colorMode = "";
