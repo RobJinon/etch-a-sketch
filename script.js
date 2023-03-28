@@ -45,14 +45,20 @@ $(document).ready(function(){
 
     $('#erase').click(function(){
         colorMode = 'erase';
+        $('.btn').removeClass('btn-secondary');
+        $(this).addClass('btn-secondary');
     });
 
     $('#black').click(function(){
         colorMode = '';
+        $('.btn').removeClass('btn-secondary');
+        $(this).addClass('btn-secondary');
     });
 
     $('#random').click(function(){
         colorMode = 'random';
+        $('.btn').removeClass('btn-secondary');
+        $(this).addClass('btn-secondary');
     });
 
 
