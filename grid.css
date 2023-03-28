@@ -11,8 +11,7 @@
     padding-bottom: 100%;
     overflow: hidden;
     cursor: pointer;
-    border: 2px #444;
+    border: 1px #444;
     border-style: solid;
-    border-width: 1px;
 
 }

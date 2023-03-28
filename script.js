@@ -44,6 +44,13 @@ $(document).ready(function(){
         colorMode = '';
     });
 
+    $("#grid-toggle-off").click(function(){
+        $('.cell').css('border', 'none');
+    });
+
+    $("#grid-toggle-on").click(function(){
+        $('.cell').css('border', '1px #444 solid');
+    });
 
 
     function setupGrid(size){
