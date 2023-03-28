@@ -2,9 +2,6 @@
 $(document).ready(function(){
     var grid = $("#grid");
 
-    var rows = 0;
-    var cols = 0;
-
     let mouseDown = false
     document.body.onmousedown = () => (mouseDown = true)
     document.body.onmouseup = () => (mouseDown = false)
@@ -44,12 +41,20 @@ $(document).ready(function(){
         colorMode = '';
     });
 
-    $("#grid-toggle-off").click(function(){
-        $('.cell').css('border', 'none');
-    });
 
-    $("#grid-toggle-on").click(function(){
-        $('.cell').css('border', '1px #444 solid');
+    var gridToggle = true;
+
+    $("#grid-toggle").change(function(){
+        if (this.checked){
+            gridToggle = true;
+            $('.cell').css('border', '1px #444 solid');
+        }
+        else {
+            gridToggle = false;
+            $('.cell').css('border', 'none');
+        }
+
+        console.log("toggle: " + gridToggle);
     });
 
 
@@ -77,5 +82,9 @@ $(document).ready(function(){
     $('#clear').click(function(){
         grid.empty();
         setupGrid(slider.val());
+        
+        if (!gridToggle) {
+            $('.cell').css('border', 'none');
+        }
     });
 });
