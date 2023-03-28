@@ -30,6 +30,13 @@ $(document).ready(function(){
         if (colorMode === 'erase'){
             e.target.style.backgroundColor = 'white';
         }
+        else if (colorMode === 'random'){
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+        
+            e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        }
         else{
             e.target.style.backgroundColor = 'black';
         }
@@ -43,6 +50,11 @@ $(document).ready(function(){
     $('#black').click(function(){
         colorMode = '';
     });
+
+    $('#random').click(function(){
+        colorMode = 'random';
+    });
+
 
 
     var gridToggle = true;
