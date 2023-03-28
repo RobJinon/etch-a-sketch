@@ -28,12 +28,10 @@ $(document).ready(function(){
             return
         }
         if (colorMode === 'erase'){
-            e.target.classList.remove('bg-slate-800');
-            e.target.classList.add('bg-white');
+            e.target.style.backgroundColor = 'white';
         }
         else{
-            e.target.classList.remove('bg-white');
-            e.target.classList.add('bg-slate-800');
+            e.target.style.backgroundColor = 'black';
         }
         
     }
