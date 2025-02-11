@@ -17,6 +17,6 @@ A fun and interactive browser-based **Etch-a-Sketch** project, inspired by **The
 
 ## 🛠 Tech Stack
 
-- **HTML** – Basic structure for the grid layout.  
-- **CSS** – Styled with flexbox for responsiveness and aesthetic appeal.  
-- **JavaScript** – Handles user interactions and dynamic grid updates.  
+- **HTML**  
+- **CSS** 
+- **JavaScript** 
